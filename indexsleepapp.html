@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Apnea Risk Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sleep Apnea Risk Assessment</h1>
+            <p>Complete both assessments to evaluate your risk for sleep apnea</p>
+        </header>
+
+        <div class="assessment-container">
+            <!-- ESS Assessment Section -->
+            <section id="ess-section">
+                <h2>Epworth Sleepiness Scale (ESS)</h2>
+                <p>How likely are you to doze off in the following situations?</p>
+                
+                <div class="ess-questions">
+                    <!-- Questions will be dynamically loaded -->
+                </div>
+            </section>
+
+            <!-- STOP-BANG Assessment Section -->
+            <section id="stopbang-section">
+                <h2>STOP-BANG Assessment</h2>
+                
+                <div class="stop-questions">
+                    <!-- STOP Questions -->
+                </div>
+                
+                <div class="bang-questions">
+                    <!-- BANG Questions -->
+                </div>
+            </section>
+
+            <button id="calculate-risk" class="primary-btn">Calculate Risk</button>
+
+            <div id="results" class="hidden">
+                <h2>Assessment Results</h2>
+                <div class="result-cards">
+                    <div id="ess-result" class="result-card"></div>
+                    <div id="stopbang-result" class="result-card"></div>
+                </div>
+                <div id="recommendations"></div>
+                <button id="download-results" class="secondary-btn">Download Results</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
